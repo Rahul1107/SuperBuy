@@ -145,7 +145,7 @@ const Category = () => {
     <div className='py-32 w-full max-w-screen-xl  items-center  m-auto  '>
       <div className='flex items-center gap-12'>
         <select name='Sort' value={sortBy} 
-        onChange={e=> setSortBy(e.target.value)} className='text-2xl  font-semibold text-gray-600 bg-slate-100 rounded-2xl h-12'>
+        onChange={e=> setSortBy(e.target.value)} className='text-2xl mx-8 md:mx-24 lg:mx-32 font-semibold text-gray-600 bg-slate-100 rounded-2xl h-12'>
         {console.log(sortBy)}
           <option value='lowest' className='text-md '>Price Low to High</option>
           <option value='highest' className='text-md '>Price High to Low</option>
