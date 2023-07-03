@@ -22,7 +22,7 @@ const Navbar = () => {
         state: {cart},
         dispatch,
       } = CartState();
-      console.log(cart.length);
+      
 
     const [isCategoryVisible, setIsCategoryVisible] = useState(false);
     const [isMenuVisible, setIsMenuVisible] = useState(false);
@@ -167,7 +167,6 @@ const Navbar = () => {
                               </div>
                               <span className='px-2 text-3xl text-slate-500 hover:text-slate-800'>
                                 <MdDelete onClick={()=>{
-                                    console.log(item)
                                     dispatch({
                                     
                                     type:'REMOVE_FROM_CART',
